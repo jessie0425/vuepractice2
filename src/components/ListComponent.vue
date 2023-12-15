@@ -15,7 +15,7 @@
 </script>
 <template>
   <div>
-    <table class="table">
+    <table>
       <thead>
       <tr>
         <th>姓名</th>
@@ -29,8 +29,14 @@
     </table>
   </div>
 </template>
-<style>
-  .table{
-    width: 100%;
+
+<style scoped lang="css">
+  table {
+    width: 600px;
+    border: 2px solid orangered;
+    text-align: center;
+  }
+  thead {
+    background-color: orangered;
   }
 </style>

@@ -31,21 +31,5 @@ export default {
 #employ {
   margin: 50px auto; width: 600px;
 }
-fieldset {
-  border: 1px solid orangered;
-  margin-bottom: 20px;
-}
-fieldset  input {
-  width: 200px;
-  height: 30px;
-  margin: 10px 0;
-}
-table {
-  width: 600px;
-  border: 2px solid orangered;
-  text-align: center;
-}
-thead {
-  background-color: orangered;
-}
+
 </style>

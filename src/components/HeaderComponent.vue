@@ -41,3 +41,15 @@
     </header>
   </div>
 </template>
+<style scoped lang="css">
+fieldset {
+  border: 1px solid orangered;
+  margin-bottom: 20px;
+}
+fieldset  input {
+  width: 200px;
+  height: 30px;
+  margin: 10px 0;
+}
+
+</style>
