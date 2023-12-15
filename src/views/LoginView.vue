@@ -5,6 +5,17 @@
 </template>
 <script>
   export default {
-    name: 'LoginView'
+    name: 'LoginView',
+    data(){
+      return{
+        user:{
+          email:'',
+          password:''
+        }
+      }
+    },
+    methods:{
+
+    }
   }
 </script>
