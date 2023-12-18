@@ -11,7 +11,8 @@ const store = new Vuex.Store({
             {name:'趙六', age:48, sex:'女', phone:'0914112344'},
             {name:'李七', age:58, sex:'男', phone:'0911512354'},
         ],
-        newPerson:{name:'', age:0, sex:'男', phone:''}
+        newPerson:{name:'', age:0, sex:'男', phone:''},
+        key: ''
     },
     actions: {
 
@@ -29,7 +30,18 @@ const store = new Vuex.Store({
         },
         DEL(state, index){
             state.persons.splice(index, 1)
-        }
+        },
+        GETKEY(state, value){
+            state.key = value
+        },
+        SETKEY(state, value){
+            state.key = value;
+            // sessionStorage.setItem('key', value);
+        },
+        DELETEKEY(state){
+            state.key = ''
+            // sessionStorage.setItem('key', value);
+        },
     }
 })
 export default store

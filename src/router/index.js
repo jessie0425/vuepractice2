@@ -29,4 +29,20 @@ const router = new VueRouter({
   routes
 })
 
+
+router.beforeEach((to, from, next) => {
+  // 取得storage
+  const isAuthenticated = sessionStorage.getItem('key');
+  if(to.path === '/login' || to.path === '/register' || isAuthenticated){
+    next()
+  }else{
+    // 避免 login頁面 導向自己 產生錯誤
+    if (to.path !== '/login' && to.path !== '/') {
+      next({ name: 'LoginView' });
+    } else {
+      next();
+    }
+  }
+})
+
 export default router
